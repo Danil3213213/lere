@@ -1,0 +1,69 @@
+<html lang="ru">
+<head>
+<title>С 14 февраля</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html { 
+    background:url(beck.jpg) no-repeat center center;
+    min-height:100%;
+    background-size:cover;
+}
+
+body {
+    min-height:100%;
+}
+p {
+	font-size: 80px;
+	text-align:center;
+	font-size: 72px;
+	background: -webkit-linear-gradient(#8b00ff, #f73228);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#a2 {
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    top:10%;
+	right:-5%;
+	color: red;
+	padding:1% 2% 1% 2%;
+}
+#a1 {
+	margin: auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    top:3.2%;
+	right:5%;
+	color: green;
+	padding:1% 2% 1% 2%;
+	font-size: 120%;
+}
+</style>
+</head>
+<body>
+<div>
+	<p>Будешь моей Валентинкой?</p>
+	<div align="center">
+		<img src="b942f414c85fc9423b8fc1bd9b1aae82.jpg" width="200" height="222" alt="котики">
+	</div>
+</div>
+<button id="a2">НЕТ</button>
+<script>
+var b = document.querySelector("button");
+b.addEventListener("click",change);
+function change()
+{
+    var i = Math.floor(Math.random()*500)+1;
+    var j = Math.floor(Math.random()*500)+1;
+    b.style.left = i+"px";
+    b.style.top = j+"px";
+}
+</script>
+<button id="a1" onclick="alert('Я ТЕБЯ ОЧЕНЬ СИЛЬНО ЛЮБЛЮ!!!')">Да</button>
+</body>
+</html>
